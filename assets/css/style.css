@@ -2,26 +2,49 @@ body {
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
     padding-top: 50px;
+    background-color: rgba(231, 228, 228, 0.2); /* Os três primeiros valores são RGB, o último é a opacidade (de 0 a 1) */
+    background-image: url('../img/espaço1.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+#historia {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px; 
+}
+
+.header-container {
+    margin-bottom: 100px; 
 }
 
 header {
-    background-color: #051d65;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem; 
 }
 
+
 nav {
-position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #0e1681;
+    opacity: 1; 
+    background-color: rgba(1, 0, 4, 0.6);
     padding: 0.5rem;
     z-index: 1000;
-
+    font-size: 30px;
 }
+
+
+
+
 
 nav a {
     color: white;
@@ -32,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #410efb;
+    background-color: #000102;
 }
 
 h1, p {
@@ -40,8 +63,14 @@ h1, p {
 }
 h2{
     text-align: center;
+    color: #f9f4f4;
+    
 }
 
+section{
+    max-width: 60%;
+    margin:0 auto;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -49,21 +78,74 @@ img {
     margin: 0 auto; 
     max-height: 300px; 
 }
-/* Adicione estilos ao footer */
+p{
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+  }
+ 
+  #fotos {
+    text-align: center;
+  }
+  .carousel {
+    position: relative; /* ou absolute, dependendo do layout desejado */
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.slide {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    /* display: none; Remova esta linha */
+    height: 300px; /* Adicione uma altura fixa ou ajuste conforme necessário */
+}
+.slide img {
+    width: 100%; /* Use 100% para garantir que as imagens se ajustem à largura do contêiner */
+    height: 300px; /* Defina a altura desejada para todas as imagens */
+    object-fit: fill; 
+}
+.nav-arrows {
+    position: absolute; /* Adicione esta linha */
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.nav-arrows button {
+    background-color: #b22121;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#prev {
+    border-radius: 5px 0 0 5px;
+}
+
+#next {
+    border-radius: 0 5px 5px 0;
+}
+
+
 footer {
-    background-color: #0e1681; /* Cor de fundo do footer */
-    color: #fff; /* Cor do texto no footer */
-    padding: 20px; /* Espaçamento interno do footer */
-    text-align: center; /* Centralizar o texto no footer */
+    opacity: 1; 
+  background-color: rgba(1, 0, 4, 0.6);
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    
   }
   
-  /* Estilizando links no footer */
   footer a {
-    color: #fff; /* Cor dos links no footer */
-    text-decoration: none; /* Remover sublinhado dos links */
-    margin: 0 10px; /* Margem entre os links */
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
   }
   
   footer a:hover {
-    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
+    text-decoration: underline; 
   }
+ 
