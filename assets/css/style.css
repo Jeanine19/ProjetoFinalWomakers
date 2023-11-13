@@ -9,13 +9,19 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 #historia {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center; 
+}
+
+#historia h2,
+#historia p {
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 .header-container {
