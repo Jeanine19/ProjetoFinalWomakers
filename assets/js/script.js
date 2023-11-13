@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlide(currentIndex);
 
-    document.querySelector('.carousel').addEventListener('click', nextSlide);
+    document.querySelector('#nextBtn').addEventListener('click', nextSlide);
+    document.querySelector('#prevBtn').addEventListener('click', prevSlide);
 });
-
