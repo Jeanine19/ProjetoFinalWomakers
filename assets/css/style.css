@@ -66,6 +66,8 @@ h1, p {
 h2 {
     text-align: center;
     color: #f9f4f4;
+    font-size: 50px; 
+  
 }
 
 section {
@@ -110,7 +112,7 @@ p {
 .slide img {
     width: 100%;
     height: 300px;
-    object-fit: contain; /* Alterado de 'cover' para 'contain' */
+    object-fit: contain; 
 }
 
 .nav-arrows {
@@ -122,7 +124,7 @@ p {
 }
 
 .nav-arrows button {
-    background-color: #04111e;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -132,7 +134,7 @@ p {
 }
 
 .nav-arrows button:hover {
-    background-color: #060606;
+    background-color: rgb(0, 0, 53);
 }
 
 #prev {
